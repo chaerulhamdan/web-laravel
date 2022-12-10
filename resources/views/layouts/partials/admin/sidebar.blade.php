@@ -107,7 +107,7 @@
       </ul>
     </li>
     <br><br>
-    {{-- <li class="menu-item">
+    <li class="menu-item">
       <a href="{{route('logout')}}" class="text-danger menu-link badge shadow-sm gradient d-flex justify-content-center"  
       onclick="event.preventDefault();
         document.getElementById('logout-form').submit();">
@@ -115,9 +115,9 @@
         Logout</a>
       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
          @csrf
-     </form> --}}
-   {{-- </li>
-    <li class="menu-item">
+     </form>
+   </li>
+    {{-- <li class="menu-item">
       <a href="{{route('logout')}}" class="menu-link badge shadow-sm gradient d-flex justify-content-center">
         <i class="menu-icon tf-icons bx bx-power-off"></i>
         <div data-i18n="Misc" style="text-transform: capitalize">Log Out</div>

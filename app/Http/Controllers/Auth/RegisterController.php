@@ -10,6 +10,8 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+session_start();
+
 class RegisterController extends Controller
 {
     /*
@@ -80,6 +82,20 @@ class RegisterController extends Controller
             'alamat' => $data['alamat'],
             'user_id' => $user->id
         ]);
+
+        $ip_address = $_SERVER['REMOTE_ADDR'];
+            $useragent = $_SERVER['HTTP_USER_AGENT'];
+            $time = time();
+
+            $user_ip = getenv('REMOTE_ADDR');
+            $geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
+            $city = $geo["geoplugin_city"];
+
+            $_SESSION['is_login'] = true;
+            $_SESSION['ip_address'] = $ip_address;
+            $_SESSION['user_agent'] = $useragent;
+            $_SESSION['lastLogin'] = $time;
+            $_SESSION['city'] = $city;
 
         return $user;   
     }

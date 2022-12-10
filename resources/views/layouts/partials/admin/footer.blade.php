@@ -6,8 +6,8 @@
        <script>
          document.write(new Date().getFullYear());
        </script>
-       , made with ❤️ by
-       <a href="https://gitlab.com/Dafaathaillah/laravel-absensi-final-project.git" target="_blank" class="footer-link fw-bolder">KELOMPOK 2 FINAL PROJECT LARAVEL</a>
+       , made for
+       <a href="https://github.com/chaerulhamdan/web-laravel" target="_blank" class="footer-link fw-bolder">project secure programming</a>
      </div>
      <div>
        <a href="" class="footer-link me-4" target="_blank">License</a>

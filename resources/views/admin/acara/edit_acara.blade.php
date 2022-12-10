@@ -27,7 +27,7 @@ Edit Acara
                   <label class="form-label" for="basic-icon-default-name">Title Acara</label>
                   <div class="input-group input-group-merge">
                      <span id="basic-icon-default-name2" class="input-group-text"><i class="bx bxs-pencil"></i></span>
-                     <input type="text" id="basic-icon-default-name" name="name" value="{{ $acr->name }}" class="form-control" placeholder="Diesnatalis"
+                     <input type="text" id="basic-icon-default-name" name="name" value="{{ $acr->name }}" class="form-control" placeholder="Judul Acara"
                         aria-label="ACME Inc." aria-describedby="basic-icon-default-name2" />
                   </div>
                </div>
