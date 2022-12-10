@@ -17,11 +17,11 @@ Kami membuat 2 dashboard yaitu untuk admin dan user
 - user hanya bisa C absensi, R acara, C aspirasi
 
 Demo
-- admin
-  email : admin@mail.com
+- admin<br>
+  email : admin@mail.com<br>
   password : sepakbola123
-- user 
-  email : user@mail.com
+- user <br>
+  email : user@mail.com<br>
   password : 12345678
 
 ## ERD :
